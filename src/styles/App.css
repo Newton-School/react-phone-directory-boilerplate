@@ -1,0 +1,127 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	color: #444;
+	background: #2c3e50;
+	font: 300 18px/18px Roboto, sans-serif;
+}
+
+.dial-pad-wrap {
+	width: 690px;
+	height: 600px;
+	display: flex;
+	overflow: hidden;
+	position: relative;
+	margin: 100px auto 0;
+	background: #ecf0f1;
+	border-radius: 24px;
+	box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+}
+
+.dial-pad-wrap .left-pan,
+.dial-pad-wrap .dial-pad {
+	padding: 15px;
+}
+
+.dial-pad-wrap .left-pan {
+	width: 52%;
+	overflow-y: scroll;
+	background: #c475aa;
+}
+
+.dial-pad-wrap .left-pan .contacts .title {
+	color: #eee;
+	font-size: 24px;
+	font-weight: 400;
+	margin-top: 15px;
+	text-align: center;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+	border-bottom: 2px solid #eee;
+}
+
+.dial-pad-wrap .left-pan .people {
+	border-radius: 8px;
+	padding: 12px;
+	display: block;
+	cursor: pointer;
+	background: #eee;
+	margin-bottom: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 5px 8px 0 rgba(0, 0, 0, .19);
+}
+
+.dial-pad-wrap .left-pan .people .name {
+	margin-bottom: 10px;
+}
+
+.dial-pad-wrap .left-pan .people .phone {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.dial-pad-wrap .dial-pad {
+	width: 48%;
+	height: 100%;
+	padding: 10px;
+}
+
+.dial-pad-wrap .dial-screen {
+	display: block;
+	width: 90%;
+	padding: 10px;
+	margin: auto;
+	height: 50px;
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 50px;
+	text-align: left;
+	margin-bottom: 20px;
+	background: #eef1f2;
+	border: 1px solid #e9eeef;
+}
+
+.dial-pad-wrap .dial-table {
+	width: 100%;
+	display: table;
+}
+
+.dial-pad-wrap .dial-table .dial-table-row {
+	display: table-row;
+}
+
+.dial-pad-wrap .dial-table .dial-table-col {
+	cursor: default;
+	width: 33.333333%;
+	text-align: center;
+	display: table-cell;
+	vertical-align: top;
+}
+
+.dial-pad-wrap .dial-table .dial-key-wrap {
+	margin-bottom: 20px;
+	border-radius: 12px;
+	transition: all .3s ease-in-out 0s;
+}
+
+.dial-pad-wrap .dial-table .dial-table-col .dial-key {
+	font-size: 28px;
+	font-weight: 400;
+	min-height: 50px;
+	line-height: 50px;
+}
+
+.dial-pad-wrap .dial-table .no-sub-key .dial-key {
+	min-height: 48px;
+	line-height: 48px;
+}
+
+.dial-pad-wrap .dial-table .dial-key-wrap:hover {
+	color: #eee;
+	background: #c475aa;
+}
